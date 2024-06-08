@@ -22,8 +22,6 @@
     ifconfig
     tap0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
             inet 192.168.100.1  netmask 255.255.255.252  broadcast 192.168.100.3
-
-
 ```
 ### Dans GNS3
 ```
