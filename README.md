@@ -2,25 +2,28 @@
 ### Dans Linux en root pour l'utilisateur USER
 ```
 1 : créer le fichier /root/Scripts/tap.sh :
-touch     /root/Scripts/tap.sh
-chmod 700 /root/Scripts/tap.sh
+    touch     /root/Scripts/tap.sh
+    chmod 700 /root/Scripts/tap.sh
 
 2 : ajouter dans /etc/sudoers en remplacant USER par le nom de votre utilisateur
-USER    ALL=(ALL)    NOPASSWD:   /root/Scripts/tap.sh
+    USER    ALL=(ALL)    NOPASSWD:   /root/Scripts/tap.sh
 ```
 ### Dans Linux en USER
 ```
 1 : créer le fichier /home/$USER/GNS3/gns3.sh :
-touch     /home/$USER/GNS3/gns3.sh
-chmod 700 /home/$USER/GNS3/gns3.sh
+    touch     /home/$USER/GNS3/gns3.sh
+    chmod 700 /home/$USER/GNS3/gns3.sh
 
 2 : lancer GNS3 en donnant le projet mynet et les paramètres de l'interface
-/home/$USER/GNS3/gns3.sh /home/$USER/GNS3/projects/mynet/mynet.gns3 tap0 192.168.100.1/30 192.168.100.3 &
+    /home/$USER/GNS3/gns3.sh /home/$USER/GNS3/projects/mynet/mynet.gns3 tap0 192.168.100.1/30 192.168.100.3 &
+    l'interface tap est créée au démarrage de GNS3 et supprimée à la fermeture
 
 3 : vérifier l'interface
-ifconfig
-tap0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
-        inet 192.168.100.1  netmask 255.255.255.252  broadcast 192.168.100.3
+    ifconfig
+    tap0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+            inet 192.168.100.1  netmask 255.255.255.252  broadcast 192.168.100.3
+
+
 ```
 ### Dans GNS3
 ```
