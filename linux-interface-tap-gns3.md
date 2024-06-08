@@ -6,7 +6,7 @@ créer le fichier /root/Scripts/tap.sh :
 touch     /root/Scripts/tap.sh
 chmod 700 /root/Scripts/tap.sh
 
-_#!/bin/bash
+_ #!/bin/bash
 
 #exemple : tap.sh add tap0 192.168.100.1/30 192.168.100.3
 
@@ -20,7 +20,7 @@ add) ip tuntap add dev $TAP mode tap
      ip address add $ADDRESS broadcast $BROADCAST dev $TAP
      ip link set dev $TAP up ;;
 del) ip tuntap del dev $TAP mode tap ;;
-esac_
+esac _
 
 ajouter dans /etc/suders en remplacant USER par le nom de votre utilisateur
 
