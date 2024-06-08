@@ -24,12 +24,11 @@ tap0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 ```
 ### Dans GNS3
 ```
-1 : ajouter un serveur : 
-    ajouter un cloud
+1 : ajouter un cloud :
     change hostname : ADMIN-SERVER
     change sylbole  : classic - server
 
-2 : ajouter un routeur dans GNS3 :
+2 : ajouter et configurer un routeur :
     interface e0
      ip address 192.168.100.2 255.255.255.252
 
@@ -41,6 +40,6 @@ tap0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 ```
 ### Dans Linux en USER
 ```
-1 : le routeur devient joignable ( ping ) et administable ( telent , ssh , ...) depuis Linux
+1 : le routeur devient joignable ( ping ) et administrable ( telnet , ssh , ... ) depuis Linux
 2 : ping 192.168.100.2
 ```
