@@ -1,6 +1,6 @@
-Configuration dans Linux d'une interface TAP pour GNS3
+# Configuration dans Linux d'une interface TAP pour GNS3
 
-Dans Linux en root :
+### Dans Linux en root :
 
 créer le fichier /root/Scripts/tap.sh
 
