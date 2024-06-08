@@ -14,8 +14,8 @@ USER    ALL=(ALL)    NOPASSWD:   /root/Scripts/tap.sh
 touch     /home/$USER/GNS3/gns3.sh
 chmod 700 /home/$USER/GNS3/gns3.sh
 
-2 : lancer GNS3 en donnant le projet et les paramètres de l'interface
-/home/$USER/GNS3/gns3.sh /home/$USER/GNS3/projects//reto.gns3 tap0 192.168.100.1/30 192.168.100.3 &
+2 : lancer GNS3 en donnant le projet mynet et les paramètres de l'interface
+/home/$USER/GNS3/gns3.sh /home/$USER/GNS3/projects/mynet/mynet.gns3 tap0 192.168.100.1/30 192.168.100.3 &
 
 3 : vérifier l'interface
 ifconfig
