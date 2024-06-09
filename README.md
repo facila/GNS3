@@ -49,8 +49,9 @@
       Annotate - Add note
         taper ADMIN
 
-5 : démarrer les 2 objets
-    start
+5 : démarrer le routeur
+    cliquer avec le bouton de droite sur le routeur
+      Start
 ```
 ### Dans Linux en USER
 ```
