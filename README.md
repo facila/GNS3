@@ -14,7 +14,7 @@
     touch     /home/$USER/GNS3/gns3.sh
     chmod 700 /home/$USER/GNS3/gns3.sh
 
-2 : lancer GNS3 en donnant votre projet "mynet" et les paramètres de l'interface
+2 : lancer GNS3 en donnant votre projet exemple "mynet" et les paramètres de l'interface
     /home/$USER/GNS3/gns3.sh /home/$USER/GNS3/projects/mynet/mynet.gns3 tap0 192.168.100.1/30 192.168.100.3 &
     l'interface tap est créée au démarrage de GNS3 et supprimée à la fermeture
 
