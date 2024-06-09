@@ -27,16 +27,27 @@
 ```
 1 : ajouter un cloud :
     change hostname : ADMIN-SERVER
-    change sylbole  : classic - server
+    change symbole  : classic - server
+    configure       : Tap interfaces - tap0 - Add
 
-2 : ajouter et configurer un routeur :
+2 : ajouter et configurer un routeur , exemple avec l'interface e0 :
+    change hostname : ADMIN-ROUTER
     interface e0
      ip address 192.168.100.2 255.255.255.252
 
 3 : ajouter un lien entre les 2 
-    ADMIN-SERVER tap0 <-> R1 e0
+    ADMIN-SERVER tap0 <-> ADMIN-ROUTER e0
+    View - Show/Hide interface labels 
 
-4 : démarrer les 2 objets
+4 : ajouter un cadre entourant les 2 objets
+    Annotate - Draw rectangle
+    cliquer avec le bouton de droite sur le cadre 
+    Lower one layer
+    ajouter un nom en haut dans le cadre
+    Annotate - Add note
+    taper ADMIN
+
+5 : démarrer les 2 objets
     start
 ```
 ### Dans Linux en USER
