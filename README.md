@@ -4,6 +4,7 @@
 1 : créer le fichier /root/Scripts/tap.sh :
       touch     /root/Scripts/tap.sh
       chmod 700 /root/Scripts/tap.sh
+      copier le fichier tap.sh ci-joint
 
 2 : ajouter dans /etc/sudoers en remplacant USER par le nom de votre utilisateur
       USER    ALL=(ALL)    NOPASSWD:   /root/Scripts/tap.sh
@@ -13,6 +14,7 @@
 1 : créer le fichier /home/$USER/GNS3/gns3.sh :
       touch     /home/$USER/GNS3/gns3.sh
       chmod 700 /home/$USER/GNS3/gns3.sh
+      copier le fichier gns3.sh ci-joint
 
 2 : lancer GNS3 en donnant :
       - votre projet                  : exemple "mynet"
